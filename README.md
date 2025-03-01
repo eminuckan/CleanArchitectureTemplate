@@ -1,3 +1,4 @@
+
 # Clean Architecture Template for .NET
 
 A comprehensive backend template implementing Clean Architecture principles in .NET, focusing on separation of concerns, testability, and scalability.
@@ -10,52 +11,23 @@ This template provides a solid foundation for building modern .NET applications 
 
 This template strictly follows Clean Architecture principles:
 
--   **Domain Layer**: Core business entities, value objects, and domain logic.
-    
--   **Application Layer**: Business use cases, CQRS commands/queries.
-    
--   **Infrastructure Layer**: External concerns (database, services, etc.).
-    
--   **API Layer**: REST endpoints and controllers.  
-    
+- **Domain Layer**: Core business entities, value objects, and domain logic.
+- **Application Layer**: Business use cases, CQRS commands/queries.
+- **Infrastructure Layer**: External concerns (database, services, etc.).
+- **API Layer**: REST endpoints and controllers.
 
 ## Technologies
 
-Component
-
-Technologies
-
-Framework
-
-.NET 8
-
-Architecture
-
-Clean Architecture, CQRS
-
-API
-
-ASP.NET Core, Carter for Minimal APIs
-
-Database
-
-Entity Framework Core, PostgreSQL
-
-Validation
-
-FluentValidation
-
-Messaging
-
-MediatR for CQRS and Mediator pattern
-
-Error Handling
-
-ErrorOr, Global Exception Handler
-
-Logging
-
-Serilog, structured logging, Seq for log monitoring
+| Component      | Technologies                          |
+| -------------- | ------------------------------------- |
+| Framework      | .NET 8                                |
+| Architecture   | Clean Architecture, CQRS              |
+| API            | ASP.NET Core, Carter for Minimal APIs |
+| Database       | Entity Framework Core, PostgreSQL     |
+| Validation     | FluentValidation                      |
+| Messaging      | MediatR for CQRS and Mediator pattern |
+| Error Handling | ErrorOr, Global Exception Handler     |
+| Logging        | Serilog, structured logging, Seq for log monitoring |
 
 ## Key Features
 
@@ -67,10 +39,8 @@ Commands and queries are separated using the CQRS pattern implemented with Media
 
 The template includes pre-built pipeline behaviors for cross-cutting concerns:
 
--   **Validation Behavior**: Automatically validates incoming requests using FluentValidation.
-    
--   **Logging Behavior**: Provides consistent logging throughout the request lifecycle.
-    
+- **Validation Behavior**: Automatically validates incoming requests using FluentValidation.
+- **Logging Behavior**: Provides consistent logging throughout the request lifecycle.
 
 ### Result Pattern with ErrorOr
 
@@ -90,7 +60,7 @@ Uses Carter for organizing minimal API endpoints with a clean, modular approach.
 
 ## Project Structure
 
-```
+```plaintext
 src
 ├── API            # REST endpoints
 ├── Domain         # Core business logic
@@ -104,30 +74,28 @@ src
 
 ### Prerequisites
 
--   .NET 8 SDK
-    
--   PostgreSQL (or modify for your preferred database)
-    
+- .NET 8 SDK
+- PostgreSQL (or modify for your preferred database)
 
 ### Setup
 
-1.  Clone the repository:
-    
-    ```
-    git clone https://github.com/your-repo/clean-architecture-template.git
-    ```
-    
-2.  Update the connection string in `appsettings.json`.
-    
-3.  Run the application:
-    
-    ```
-    dotnet run --project src/API
-    ```
-    
-4.  Open [https://localhost:5001/swagger](https://localhost:5001/swagger) to see the API documentation.
-    
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/clean-architecture-template.git
+   ```
+2. Update the connection string in `appsettings.json`.
+3. Run the application:
+   ```sh
+   dotnet run --project src/API
+   ```
+4. Open [https://localhost:5001/swagger](https://localhost:5001/swagger) to see the API documentation.
+
+## TODO
+
+- [ ] Tests
+- [ ] Opentelemetry
+- [ ] Installation with dotnet template
 
 ## License
 
-This project is licensed under the MIT License -- see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
