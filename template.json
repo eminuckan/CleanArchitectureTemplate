@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "eminuckan",
+  "classifications": [ "Clean Architecture", "DDD", "Template" ],
+  "name": "Clean Architecture Template by eminuckan",
+  "identity": "Eminuckan.CleanArchitecture.Template",
+  "shortName": "cleanarch",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "CleanArchitectureTemplate",
+  "preferNameDirectory": true
+}

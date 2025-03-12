@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CleanArchitectureTemplate", "CleanArchitectureTemplate", "{291FB989-CD80-4265-B6DA-F67A6332AA95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{291FB989-CD80-4265-B6DA-F67A6332AA95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.API", "CleanArchitectureTemplate\CleanArchitectureTemplate.API\CleanArchitectureTemplate.API.csproj", "{37EF3B05-E887-4832-B032-3615DCDB6D90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.API", "src\CleanArchitectureTemplate.API\CleanArchitectureTemplate.API.csproj", "{37EF3B05-E887-4832-B032-3615DCDB6D90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Domain", "CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\CleanArchitectureTemplate.Domain.csproj", "{7F8A2327-6B6A-494A-B780-AF03C03C12B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Domain", "src\CleanArchitectureTemplate.Domain\CleanArchitectureTemplate.Domain.csproj", "{7F8A2327-6B6A-494A-B780-AF03C03C12B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Application", "CleanArchitectureTemplate\CleanArchitectureTemplate.Application\CleanArchitectureTemplate.Application.csproj", "{7371460B-24B7-4A22-8314-FF7DE6BDD40D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Application", "src\CleanArchitectureTemplate.Application\CleanArchitectureTemplate.Application.csproj", "{7371460B-24B7-4A22-8314-FF7DE6BDD40D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Infrastructure", "CleanArchitectureTemplate\CleanArchitectureTemplate.Infrastructure\CleanArchitectureTemplate.Infrastructure.csproj", "{52522063-339A-45E9-818C-84D029573282}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureTemplate.Infrastructure", "src\CleanArchitectureTemplate.Infrastructure\CleanArchitectureTemplate.Infrastructure.csproj", "{52522063-339A-45E9-818C-84D029573282}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".template.config", ".template.config", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		template.json = template.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
