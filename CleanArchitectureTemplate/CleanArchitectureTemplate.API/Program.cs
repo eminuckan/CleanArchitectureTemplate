@@ -8,6 +8,8 @@ using System.Diagnostics;
 using System.Globalization;
 using Serilog;
 using Serilog.Events;
+using CleanArchitectureTemplate.Application.Common.Interfaces;
+using CleanArchitectureTemplate.API.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 
