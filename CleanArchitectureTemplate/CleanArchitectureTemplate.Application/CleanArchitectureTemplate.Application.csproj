@@ -20,9 +20,5 @@
     <ProjectReference Include="..\CleanArchitectureTemplate.Domain\CleanArchitectureTemplate.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Todo\Queries\" />
-  </ItemGroup>
-
 
 </Project>

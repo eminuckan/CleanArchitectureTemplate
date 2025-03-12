@@ -40,7 +40,6 @@ namespace CleanArchitectureTemplate.Infrastructure.Data.Interceptors
 
     public static class Extensions
     {
-        // Extension method for relational changes
         public static bool HasChangedOwnedEntities(this EntityEntry entry) =>
             entry.References.Any(r =>
                 r.TargetEntry != null &&
