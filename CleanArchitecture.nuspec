@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>eminuckan.CleanArchitecture.Template</id>
+		<version>1.0.2</version>
+		<title>Clean Architecture Template</title>
+		<authors>eminuckan</authors>
+		<description>
+			A clean architecture template for building scalable and maintainable .NET applications.
+		</description>
+		<summary>
+			A solution template implementing Clean Architecture principles to structure your .NET projects.
+		</summary>
+		<releaseNotes>
+			Initial release.
+		</releaseNotes>
+		<projectUrl>https://github.com/eminuckan/CleanArchitectureTemplate</projectUrl>
+		<repository type="git" url="https://github.com/eminuckan/CleanArchitectureTemplate.git" branch="master" />
+		<license type="expression">MIT</license>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<tags>template custom dotnet clean-architecture</tags>
+		<icon>icon.png</icon>
+		<readme>README.md</readme>
+		<packageTypes>
+			<packageType name="Template" />
+		</packageTypes>
+	</metadata>
+	<files>
+		<file src=".template.config\icon.png" />
+		<file src=".template.config\template.json" target="content\.template.config" />
+		<file src="README.md" />
+		<file src=".\**" target="content"
+      exclude="**\node_modules\**;**\bin\**;**\obj\**;.\.git\**;.\.vscode\**;**\.template.config\**;**\appsettings.Development.json" />
+	</files>
+</package>

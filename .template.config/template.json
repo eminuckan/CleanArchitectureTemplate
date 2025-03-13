@@ -3,7 +3,7 @@
   "author": "eminuckan",
   "classifications": [ "Clean Architecture", "DDD", "Template" ],
   "name": "Clean Architecture Template by eminuckan",
-  "identity": "Eminuckan.CleanArchitecture.Template",
+  "identity": "eminuckan.CleanArchitecture.Template",
   "shortName": "cleanarch",
   "tags": {
     "language": "C#",
